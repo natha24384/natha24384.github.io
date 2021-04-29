@@ -2,5 +2,8 @@
 null,
 {"id":1,"expanded":false,"name":"debugroom","order":1,"parentId":0,"scrollX":832,"scrollY":640},
 {"id":2,"expanded":true,"name":"home","order":2,"parentId":0,"scrollX":819,"scrollY":461},
-{"id":3,"expanded":false,"name":"MAP003","order":3,"parentId":0,"scrollX":811,"scrollY":491}
+{"id":3,"expanded":true,"name":"MAP003","order":4,"parentId":0,"scrollX":939,"scrollY":507},
+{"id":4,"expanded":false,"name":"Inside","order":3,"parentId":2,"scrollX":819,"scrollY":461},
+{"id":5,"expanded":false,"name":"dungeon 1","order":5,"parentId":3,"scrollX":811,"scrollY":973},
+{"id":6,"expanded":false,"name":"dungeon 2","order":6,"parentId":5,"scrollX":939,"scrollY":1613}
 ]
