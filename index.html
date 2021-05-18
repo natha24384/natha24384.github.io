@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>thumbspanel</title>
-    <style media="screen">
-    #content {
-      border: 4px dotted #54082e;
-      width 80%;
-      margin; auto;
-      background-color: #d75267;
-    }
-      div{
-        border: 5px solid #920000;
-        background-color: #dadada;
-        margin: 10px;
-        padding: 3px;
-      }
-      .linksBox
-      @media (max-width: 660px) {
-        #content {
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="content">
-      <div id="headerBox">
-  <h1>thumbspanel</h1>
-</div>
-<div class="Linksbox">
-<p><a href="http://172.21.3.4:5000/tutd?thumb=up">thumbs up</a></p>
-<p><a href="http://172.21.3.4:5000/tutd?thumb=down">thumbs down</a></p>
-<p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">thumbs wiggle</a></p>
-</div>
-<div class="Linksbox">
-<p><a href="http://172.21.3.4:5000/bgm">bgm</a></p>
-<p><a href="http://172.21.3.4:5000/say?phrase=CRYABOUTIT"<b> >say</a></p>
-<p><a href="http://172.21.3.4:5000/perc?amount=3"<b> >perc<p><a
-<p><a href="http://172.21.3.4:5000/color?hex=FFFF00"<b> >color</a></p>
-</div>
-</div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>thumbspanel</title>
+<link rel="stylesheet" href="css/style.css">
+<body>
+  <div id="content">
+    <div id="headerBox">
+      <h1>thumbspanel</h1>
+      <p id="phrasePara"></p>
+    </div>
+    <div class="linksBox">
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=up">thumbs up</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=down">thumbs down</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">thumbs wiggle</a></p>
+    </div>
+    <div class="textBox">
+      <img src="img/Madotsuki_Chair_Spin.gif" alt="Spinning Mado">
+      <img src="img/Mado_game.gif" alt="Game Mado">
+      <img src="img/witch_mado.gif" alt="Witch Mado">
+        <p>Yume Nikki is one weird game, man.</p>
+        <div class="linksBox">
+          <p><a href="http://172.21.3.4:5000/bgm">bgm</a></p>
+          <p><a href="http://172.21.3.4:5000/say?phrase=CRYABOUTIT" <b> >say</a></p>
+          <p><a href="http://172.21.3.4:5000/perc?amount=3" <b> >perc<p><a <p><a href="http://172.21.3.4:5000/color?hex=FFFF00" <b> >color</a></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var phraselist = ['Wake up', 'Translate to Dream Diary', 'FACE', '24 is my unlucky number', 'Windowed', 'Wave a knife around', 'UBOA', 'Monochrome twins', 'Room of Doors']
+    var random = Math.random() * 9
+    random = Math.floor(random)
+    var phrasePara = document.getElementById('phrasePara')
+    phrasePara.innerHTML = phraselist[random]
+    </script>
+</body>
+
 </html>
